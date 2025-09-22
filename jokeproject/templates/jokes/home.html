@@ -1,12 +1,13 @@
+{% load static %}
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
     <title>Random Joke App</title>
-    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
 </head>
 <body>
-    <h1>😂 Random Joke Generator</h1>
+    <h1>😂 Random Joke</h1>
     <p>{{ joke }}</p>
-    <button onclick="location.reload()">Get Another Joke</button>
 </body>
 </html>
