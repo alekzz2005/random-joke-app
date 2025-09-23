@@ -5,9 +5,13 @@
     <meta charset="UTF-8">
     <title>Random Joke App</title>
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <script src="{% static 'js/script.js' %}" defer></script>
 </head>
 <body>
-    <h1>😂 Random Joke</h1>
-    <p>{{ joke }}</p>
+    <div class="container">
+        <h1>😂 Random Joke</h1>
+        <p id="joke">{{ joke }}</p>
+        <button id="new-joke">Get Another Joke</button>
+    </div>
 </body>
 </html>
