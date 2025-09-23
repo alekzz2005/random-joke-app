@@ -1,17 +1,48 @@
 {% load static %}
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
-    <title>Random Joke App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Joke Generator | Programmer Humor</title>
+    <meta name="description" content="Get random programming jokes and share them with your friends!">
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
-    <script src="{% static 'js/script.js' %}" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="container">
-        <h1>😂 Random Joke</h1>
-        <p id="joke">{{ joke }}</p>
-        <button id="new-joke">Get Another Joke</button>
+        <div class="header">
+            <span class="emoji">😂</span>
+            <h1>Random Joke Generator</h1>
+            <p class="subtitle">Because every programmer needs a good laugh! 🚀</p>
+        </div>
+        
+        <div class="joke-container">
+            <p id="joke">{{ joke }}</p>
+        </div>
+        
+        <div class="buttons">
+            <button id="new-joke" class="btn btn-primary">
+                <span>🎲</span>
+                New Joke
+            </button>
+            <button id="copy-joke" class="btn btn-secondary">
+                <span>📋</span>
+                Copy Joke
+            </button>
+            <button id="toggle-theme" class="btn btn-accent">
+                <span>🌙</span>
+                Dark Mode
+            </button>
+        </div>
+        
+        <div class="footer">
+            <p>Press <kbd>Space</kbd> for new joke • <kbd>Ctrl+C</kbd> to copy • <kbd>Alt+D</kbd> for dark mode</p>
+        </div>
     </div>
+
+    <script src="{% static 'js/script.js' %}"></script>
 </body>
 </html>
