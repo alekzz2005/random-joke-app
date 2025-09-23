@@ -1,6 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
     const jokes = [
-        // Existing computer jokes
         "Why don't programmers like nature? It has too many bugs.",
         "Why do Python developers wear glasses? Because they don't C#.",
         "How many programmers does it take to change a light bulb? None, that's a hardware problem!",
@@ -13,8 +12,6 @@ document.addEventListener("DOMContentLoaded", () => {
         "I would tell you a joke about UDP, but you might not get it.",
         "There are two hard problems in computer science: caching, naming things, and off-by-one errors.",
         "Why do programmers prefer dark mode? Because light attracts bugs!",
-
-        // Random jokes
         "Why don’t skeletons fight each other? They don’t have the guts.",
         "I told my wife she should embrace her mistakes. She gave me a hug.",
         "Why don’t oysters donate to charity? Because they’re shellfish.",
