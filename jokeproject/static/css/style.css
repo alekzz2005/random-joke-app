@@ -7,6 +7,8 @@
     --card-bg: #ffffff;
     --shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
     --gradient: linear-gradient(135deg, #74ebd5, #9face6);
+    /* RGB triple for use in rgba(var(--primary-color-rgb), alpha) */
+    --primary-color-rgb: 74, 144, 226;
 }
 
 [data-theme="dark"] {
@@ -18,6 +20,7 @@
     --card-bg: #353b48;
     --shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
     --gradient: linear-gradient(135deg, #2c3e50, #4ca1af);
+    --primary-color-rgb: 108, 92, 231;
 }
 
 * {
@@ -232,4 +235,19 @@ h1 {
 
 .notification.show {
     transform: translateX(0);
+}
+
+/* Add this to your existing CSS */
+.btn:focus {
+    outline: 2px solid var(--primary-color);
+    outline-offset: 2px;
+}
+
+kbd {
+    background-color: var(--card-bg);
+    border: 1px solid var(--primary-color);
+    border-radius: 4px;
+    padding: 2px 6px;
+    font-size: 0.8em;
+    box-shadow: 0 2px 0 rgba(0,0,0,0.1);
 }

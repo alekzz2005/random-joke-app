@@ -43,6 +43,25 @@
         </div>
     </div>
 
+    <!-- Pass Django data to JavaScript safely -->
+    <script>
+        // Pass the jokes list from Django to JavaScript safely
+        window.djangoJokes = [
+            "Why don't programmers like nature? It has too many bugs.",
+            "Why do Python developers wear glasses? Because they don't C#.",
+            "How many programmers does it take to change a light bulb? None, that's a hardware problem!",
+            "Debugging is like being the detective in a crime movie where you are also the murderer.",
+            "A SQL query walks into a bar, approaches two tables and asks: 'May I join you?'",
+            "There are only 10 kinds of people in this world: those who know binary and those who don't.",
+            "I told my computer I needed a break, and it said 'No problem, I'll go to sleep.'",
+            "Why was the developer broke? Because he used up all his cache.",
+            "Why do Java developers wear glasses? Because they can't C#!",
+            "I would tell you a joke about UDP, but you might not get it.",
+            "There are two hard problems in computer science: caching, naming things, and off-by-one errors.",
+            "Why do programmers prefer dark mode? Because light attracts bugs!"
+        ];
+    </script>
+    
     <script src="{% static 'js/script.js' %}"></script>
 </body>
 </html>
